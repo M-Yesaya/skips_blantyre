@@ -69,8 +69,7 @@ m <- m %>%
 # Print the map
 m
 # -------------------------------------------------------------------------
+#79 skips shown
 
-
-
-
+write_csv(selected_coordinates, file=here::here("derived_data/export79.csv"))
 

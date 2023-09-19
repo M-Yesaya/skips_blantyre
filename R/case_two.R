@@ -71,6 +71,6 @@ m
 # -------------------------------------------------------------------------
 #53 skips shown
 
-
+write_csv(df_cluster, file=here::here("derived_data/export53.csv"))
 
 

@@ -4,9 +4,9 @@ library(cluster) #clustering
 library(leaflet)#fitting OSM data
 # -------------------------------------------------------------------------
 
-skip_waste<- read_csv("waste.csv")
+skip_waste<- read_csv("raw_data/waste.csv")
 
-skip_yesaya <- read_csv("wasteskipsblantyre.csv")
+skip_yesaya <- read_csv("raw_data/wasteskipsblantyre.csv")
 
 # -------------------------------------------------------------------------
 # renaming
@@ -68,3 +68,4 @@ m
 
 # -------------------------------------------------------------------------
 #52 skips shown
+write_csv(consolidated_data, file=here::here("derived_data/export52.csv"))
